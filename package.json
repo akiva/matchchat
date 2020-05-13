@@ -1,0 +1,32 @@
+{
+  "name": "matchchat",
+  "version": "0.0.0",
+  "description": "A simple chat application demonstrating the pairing of two users with one another, built using Choo.",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "browserify": "^16.5.1",
+    "choo": "^7.1.0",
+    "cuid": "^2.1.8",
+    "minimist": "^1.2.5",
+    "normalize.css": "^8.0.1",
+    "sheetify": "^8.0.0",
+    "trumpet": "^1.7.2",
+    "ws": "^7.2.3"
+  },
+  "devDependencies": {
+    "choo-devtools": "^3.0.4",
+    "mock-socket": "^9.0.3",
+    "nyc": "^15.0.1",
+    "tap-nyc": "^1.0.3",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.0.0"
+  },
+  "scripts": {
+    "coverage": "nyc tape lib/**/*test.js | tap-nyc",
+    "start": "node index.js",
+    "test": "tape lib/**/*test.js | tap-spec"
+  },
+  "author": "Akiva Levy <akiva@sixthirteen.co> (http://sixthirteen.co/)",
+  "license": "ISC"
+}

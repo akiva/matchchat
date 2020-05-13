@@ -1,0 +1,31 @@
+:host {
+}
+
+dl#messages {
+  text-align: left;
+  height: 50vh;
+  overflow-y: scroll;
+  background: white;
+  padding: 1.15rem;
+}
+
+dl#messages dt {
+  display: inline-block;
+  float: left;
+  clear: left;
+  margin-right: 1.15rem;
+}
+
+dl#messages dd {
+  margin: 0;
+  display: inline-block;
+  float: left;
+}
+
+form {
+  display: flex;
+}
+
+input {
+  flex-grow: 1;
+}

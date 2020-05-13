@@ -1,0 +1,109 @@
+html { font-size: 16px; }
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(0deg,#29b996,#3498db);
+  background-size: 400% 400%;
+  animation: backgroundGradient 20s ease infinite;
+  text-rendering: optimizeLegibility;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  font-weight: 400;
+  line-height: 1.65;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+@keyframes backgroundGradient {
+  0% { background-position: 0 0; }
+  50% { background-position: 0 100%; }
+  100% { background-position: 0 0; }
+}
+
+p { margin-bottom: 1.15rem; }
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1.05rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #3a3e3a;
+  text-shadow: 0px -1px 0px rgba(255,255,255,.5),
+    0 -2px 3px rgba(234, 239, 239, 0.4);
+}
+
+h1 {
+  text-transform: uppercase;
+  margin-top: 0;
+  font-size: 2.488em;
+  word-break: break-word;
+  text-shadow: 0px -1px 0px rgba(255, 255, 255, 0.5),
+    0 -2px 3px rgba(234, 239, 239, 0.4);
+}
+
+h2 {font-size: 2.074em;}
+
+h3 {font-size: 1.728em;}
+
+h4 {font-size: 1.44em;}
+
+h5 {font-size: 1.2em;}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection {
+  background: #5af;
+  color: #fff;
+  text-shadow: none;
+}
+
+main {
+  margin: 1.5rem;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #d6dada;
+  background: rgba(234, 239, 239, 0.8);
+  border-radius: 0.25rem;
+  padding: 1.5rem;
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.1),
+    inset 0 7px 7px rgba(234, 239, 239, 0.4);
+}
+
+input {
+  padding: 0.25rem;
+  margin: 0 0.25rem;
+  border-radius: 0.25rem;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -1px 3px rgba(234, 239, 239, 0.4),
+    inset 0 1px 7px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+  padding: 0.25rem;
+  margin: 0 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1),
+    inset 0 7px 7px rgba(234, 239, 239, 0.4);
+  color: #350000;
+  background: linear-gradient(0deg, #ff4a69, #ff8da1);
+  text-shadow: 0 -1px 0 #ff9eb2;
+  outline: 0;
+}
+
+button[type="submit"]:focus,
+button[type="submit"]:hover {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  box-shadow: inset 0 -7px 7px rgba(0, 0, 0, 0.1);
+  text-shadow: none;
+  background: linear-gradient(0deg, #ff4a69, #ff8da1);
+}
+
